@@ -1,0 +1,16 @@
+# 创建测试用的 Python 脚本
+echo "# Test Python file
+print('Hello, Test Repo!')" > test.py
+
+# 创建 .gitignore 文件（忽略不需要提交的文件）
+echo "*.log
+__pycache__/
+.DS_Store" > .gitignore
+
+# 创建测试用的文本文件
+echo "Test content for text file" > test.txt
+
+# 提交并推送这些文件
+git add .
+git commit -m "Add test files: test.py, .gitignore, test.txt"
+git push
